@@ -8,7 +8,7 @@ MongoClient.connect("mongodb://localhost:27017/ToDoApp", (err, db) => {
     console.log("Mongo is on!");
 
     db.db('ToDoApp').collection('ToDo').insertOne({
-        desc : 'Something else to be done',
+        desc : 'junk value',
         completed : false
     }, (err, result) => {
         if(err){
